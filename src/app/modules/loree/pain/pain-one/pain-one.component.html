@@ -1,0 +1,10 @@
+<fieldset>
+  <div *ngIf="selectedPain">
+    <h2>Détails du Pain</h2>
+      <ul>
+        <li><b>Nom : </b> {{ selectedPain.nom }}</li>
+        <li><b>Description : </b> {{ selectedPain.description }}</li>
+        <li><b>Prix : </b> {{ selectedPain.prix }}</li>
+        <li><b>Ingredients : </b> {{ selectedPain.ingredients }}</li>
+      </ul>
+  </div>
