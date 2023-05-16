@@ -1,0 +1,45 @@
+<fieldset>
+  <a class="all" routerLink="../all">Retour à la Liste</a>
+  <form [formGroup]="painForm" (ngSubmit)="createPain()">
+
+    <div>
+      <label for="nom">Nom : </label>
+      <input type="text" id="nom" formControlName="nom" placeholder="Nom du Pain"/>
+      <span *ngIf="painForm.controls['nom'].invalid && painForm.controls['nom'].touched">Le nom est reuqit</span>
+    </div>
+
+    <div>
+      <label for="prix">prix : </label>
+      <input type="text" id="prix" formControlName="prix" placeholder="Prix du Pain"/>
+      <span *ngIf="painForm.controls['prix'].invalid && painForm.controls['prix'].touched">Le prix est requit</span>
+    </div>
+
+    <div>
+      <label for="description">Description : </label>
+      <input type="text" id="description" formControlName="description" placeholder="description"/>
+      <span *ngIf="painForm.controls['description'].invalid && painForm.controls['description'].touched">Une description est requise</span>
+    </div>
+<!--
+    <div>
+      <label for="ingredients">Ingredients : </label>
+      <select id="ingredients" formControlName="ingredients" multiple>
+        <option *ngFor="let ingredient of ingredientsList" [value]="ingredient">{{ ingredient.nom }}</option>
+      </select>
+      <span *ngIf="painForm.controls['ingredients'].invalid && painForm.controls['ingredients'].touched">Au moins un ingrédient doit être sélectionné</span>
+    </div>
+-->
+  <div>
+    <label for="ingredients">Ingredients :</label>
+    <select id="ingredients" formControlName="ingredients" multiple #ingredientSelect>
+      <option *ngFor="let ingredient of ingredientsList" [value]="ingredient.id">
+        {{ ingredient.nom }}
+      </option>
+    </select>
+  </div>
+
+
+
+    <button class="button" type="submit">Ajouter le pain</button>
+
+  </form>
+</fieldset>

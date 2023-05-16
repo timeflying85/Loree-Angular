@@ -1,10 +1,33 @@
-<fieldset>
-  <div *ngIf="selectedPain">
+<fieldset *ngIf="selectedPain; else inexistant">
+  <div >
     <h2>Détails du Pain</h2>
       <ul>
         <li><b>Nom : </b> {{ selectedPain.nom }}</li>
         <li><b>Description : </b> {{ selectedPain.description }}</li>
         <li><b>Prix : </b> {{ selectedPain.prix }}</li>
-        <li><b>Ingredients : </b> {{ selectedPain.ingredients }}</li>
+        <li><b>Ingredients : </b></li>
+        <span *ngFor="let ingredient of selectedPain.ingredients">
+          <p></p>
+          - {{ ingredient.nom }}
+
+        </span>
       </ul>
+      <a class="all" routerLink="../all">Retour</a>
   </div>
+
+  <h3>Allergènes :</h3>
+    <ul>
+      <li *ngFor="let allergene of allergenes">
+        <b> {{ allergene.nom }} </b>
+        <img [src]="allergene.logo" alt="Logo Allergène">
+      </li>
+    </ul>
+
+
+</fieldset>
+
+<ng-template #inexistant>
+  <div *ngIf="selectedPain == undefined">
+    <h3>Pain inexistant</h3>
+  </div>
+</ng-template>

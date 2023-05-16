@@ -27,5 +27,16 @@ export class PainAllComponent {
     });
   }
 
+  deletePain(id:number) {
+    this.myService.deletePain(id).subscribe(
+      {
+        next : () => {
+          this.getPains()
+        },
+        error : (err) => {console.log(err)}
+       }
+    )
+  }
+
 }
 
