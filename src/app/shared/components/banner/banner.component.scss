@@ -1,0 +1,118 @@
+.banner {
+  height: 400px;
+  background-image: url('/assets/images/bg_pain2.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(240, 236, 236);
+  animation: animateBackground 10s linear 1;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: left; /* Position initiale de l'image */
+  }
+  100% {
+    background-position: right; /* Position finale de l'image */
+  }
+}
+
+.banner ul {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.banner-item {
+  margin: 80px;
+}
+
+fieldset {
+  border: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #bff8eb;
+  margin: 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Utilisez 'space-between' pour répartir les éléments sur toute la largeur */
+  align-items: center;
+  width: 100%; /* Définissez une largeur de 100% pour occuper tout l'espace disponible */
+  max-width: 100%;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration:solid;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: x-large;
+  color: #4e0986;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  /* Styles pour les écrans de petite taille (par exemple, smartphones) */
+  .menu {
+    flex-wrap: wrap; /* Permet aux éléments de s'enrouler lorsqu'ils ne peuvent pas tenir sur une seule ligne */
+    height: auto;
+  }
+
+  .menu ul {
+    justify-content: center;
+  }
+
+  .menu li {
+    margin: 5px; /* Ajoute un espacement entre les éléments */
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Ajustez cette valeur en fonction de la largeur souhaitée pour le logo */
+  height: 400px; /* Ajustez cette valeur en fonction de la hauteur souhaitée pour le logo */
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

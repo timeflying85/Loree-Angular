@@ -33,18 +33,21 @@ export class PainCreateComponent implements OnInit{
 
 
   createPain() : void {
-    const selectedIngredients = this.painForm.get('ingredients')?.value;
-    this._myService.createPain(this.painForm.value).subscribe({
-      next : (data) => {
-        console.log(data);
+    if (this.painForm.valid){
+      const selectedIngredients = this.painForm.get('ingredients')?.value;
+      this._myService.createPain(this.painForm.value).subscribe({
+        next : (data) => {
+          console.log(data);
+          this._router.navigateByUrl('/loree/pain/all');
+        },
 
-      },
+        error : (err) => {
+          console.log(err);
+        }
 
-      error : (err) => {
-        console.log(err);
-      }
+      });
+    }
 
-    })
   }
 
 

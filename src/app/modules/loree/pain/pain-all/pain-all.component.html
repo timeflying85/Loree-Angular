@@ -1,14 +1,16 @@
 <body>
-  <button class="button"><a class="create" [routerLink]="['../create']">Créer un Pain</a></button>
   <div class="content">
+    <button class="button-85"><a class="create" [routerLink]="['../create']">Créer un Pain</a></button>
       <h1>Liste des Pains</h1>
       <div *ngFor="let pain of pains">
         <fieldset>
-          <p><b>Nom :</b> {{ pain.nom }}</p>
-          <p><b>Prix :</b> {{ pain.prix }}</p>
+          <h2>{{ pain.nom }}</h2>
+     <!--    <p><b>Prix :</b> {{ pain.prix }}</p> -->
           <p><b>Description :</b> {{ pain.description }}</p>
-          <a class="one" [routerLink]="['../' + pain.nom]">Détails</a>
+          <p></p>
+          <a class="button-62" [routerLink]="['../' + pain.nom]"><span>Détails</span></a>
         </fieldset>
       </div>
   </div>
 </body>
+
