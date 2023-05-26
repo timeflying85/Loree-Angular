@@ -1,4 +1,124 @@
 img {
   width: 50px;
   height: auto;
+  padding: 10px;
+}
+
+fieldset, .details, h2, h3 {
+  line-height: 1;
+  border: none;
+  flex: 0 0 calc(50% - 20px); /* Ajustez la largeur des fieldsets selon vos besoins */
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredient {
+  line-height: 1;
+  border: none;
+  flex: 0 0 calc(50% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePain {
+  width: 700px;
+  height: auto;
+}
+
+h1 {
+  color: #5f00c4;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+a{
+  margin-top: 30px;
+}
+
+h3 {
+  color: #5f00c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+b{
+  color: #210ba1;
+  flex: 0 0 calc(50% - 20px); /* Ajustez la largeur des fieldsets selon vos besoins */
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  line-height: 1;
+}
+
+a {
+  position: absolute;
+  left: 90%;
+}
+
+.nom {
+  color: #210ba1;
+  font-size: xx-large;
+}
+
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }

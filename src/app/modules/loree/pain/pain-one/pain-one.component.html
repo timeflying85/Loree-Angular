@@ -1,27 +1,28 @@
 <fieldset *ngIf="selectedPain; else inexistant">
-  <div >
-    <h2>Détails du Pain</h2>
+  <div>
+    <a class="button-62" routerLink="../all">Retour à la liste</a>
       <ul>
-        <li><b>Nom : </b> {{ selectedPain.nom }}</li>
-        <li><b>Description : </b> {{ selectedPain.description }}</li>
-        <li><b>Prix : </b> {{ selectedPain.prix }}</li>
-        <li><b>Ingredients : </b></li>
+        <li class="details"><h2 class="nom">{{selectedPain.nom }} :</h2></li>
+        <div class="imageContainer">
+          <img class="imagePain" src="http://localhost:8080/imagePain/{{selectedPain.imagePain.cheminImage}}">
+        </div>
+        <li class="details"> {{ selectedPain.description }}</li>
+        <li class="details"><b>Prix : </b> {{ selectedPain.prix }}</li>
+        <li class="details"><b>Ingredients : </b></li>
         <span *ngFor="let ingredient of selectedPain.ingredients">
-          <p></p>
-          - {{ ingredient.nom }}
-
+          <li class="ingredient">- {{ ingredient.nom }}</li>
         </span>
       </ul>
-      <a class="all" routerLink="../all">Retour</a>
   </div>
-
-  <h3>Allergènes :</h3>
+  <p></p>
+  <h3> Allergènes :</h3>
     <ul>
       <li *ngFor="let allergene of allergenes">
-        <b> {{ allergene.nom }} </b>
+  <!--      <b class="details"> {{ allergene.nom }} </b>  -->
         <img [src]="allergene.logo" alt="Logo Allergène">
       </li>
     </ul>
+
 
 
 </fieldset>

@@ -19,7 +19,6 @@ export class PainAllComponent {
 
   ngOnInit(): void {
     this.getPains()
-    this.myService.setBackgroundImageUrl('../../../../assets/images/339983619_621441603224041_6202739545816696115_n.png');
   }
 
   getPains() {

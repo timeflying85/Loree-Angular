@@ -4,7 +4,13 @@ export interface PainDTO {
   nom: string;
   description: string;
   prix: string;
-  ingredients: IngredientDTO[]
+  ingredients: IngredientDTO[];
+  imagePain: ImageDTO
+}
+
+export interface ImageDTO {
+  id: number;
+  cheminImage: string
 }
 
 export interface IngredientDTO {

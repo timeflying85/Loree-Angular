@@ -11,15 +11,9 @@ export class MyServiceService {
 
   private baseUrl = 'http://localhost:8080/pain';
   private apiUrl = 'http://localhost:8080/ingredient';
-  private backgroundImageUrlSubject = new BehaviorSubject<string>('');
-  public backgroundImageUrl$ = this.backgroundImageUrlSubject.asObservable();
 
 
   constructor(private http: HttpClient) { }
-
-  setBackgroundImageUrl(imageUrl: string) {
-    this.backgroundImageUrlSubject.next(imageUrl);
-  }
 
   getPain(): Observable<PainDTO[]> {
     return this.http.get<PainDTO[]>(this.baseUrl + '/all');

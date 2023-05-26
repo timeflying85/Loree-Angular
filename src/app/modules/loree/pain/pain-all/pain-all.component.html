@@ -4,9 +4,9 @@
       <h1>Liste des Pains</h1>
       <div *ngFor="let pain of pains">
         <fieldset>
-          <h2>{{ pain.nom }}</h2>
+          <h2>{{ pain.nom }} : </h2>
      <!--    <p><b>Prix :</b> {{ pain.prix }}</p> -->
-          <p><b>Description :</b> {{ pain.description }}</p>
+          <p>{{ pain.description }}</p>
           <p></p>
           <a class="button-62" [routerLink]="['../' + pain.nom]"><span>Détails</span></a>
         </fieldset>
