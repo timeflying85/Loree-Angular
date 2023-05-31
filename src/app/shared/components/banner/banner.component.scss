@@ -29,10 +29,15 @@
 
 .banner-item {
   margin: 80px;
+  text-decoration: none;
 }
 
 fieldset {
   border: none;
+}
+
+.menuD {
+  text-decoration: none;
 }
 
 .menu {
@@ -40,10 +45,9 @@ fieldset {
   justify-content: center;
   align-items: center;
   height: 80px;
-  background-color: #bff8eb;
+  background-color: #3d6277;
   margin: 0;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 .menu ul {
@@ -61,14 +65,14 @@ fieldset {
   display: inline-block;
 }
 
-.menu li a {
+.menu div a {
   text-decoration:solid;
-  text-decoration: underline;
+  padding-right: 160px;
   font-weight: bold;
   font-size: x-large;
-  color: #4e0986;
-  padding: 5px;
+  color: #f3f2f5;
   white-space: nowrap;
+  font-family: 'Satisfy', cursive;
 }
 
 @media (max-width: 768px) {
@@ -116,3 +120,57 @@ fieldset {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: #3d6277;
+  padding: 2em;
+}
+.footer-top{
+  background: #2d4958;
+}
+.footer-middle{
+   background: #3d6277;
+  padding-top: 2em;
+  color: white;
+}
+/**Sub Navigation**/
+.subnavigation-container{
+  background: #3d6277;
+}
+.subnavigation .nav-link{
+  color: white;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+.col-subnav .active{
+  border-top:5px solid orange;
+ background: white;
+  color: black;
+}
+
+
+
+

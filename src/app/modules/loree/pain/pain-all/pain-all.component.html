@@ -1,16 +1,68 @@
-<body>
+<div class="body">
   <div class="content">
     <button class="button-85"><a class="create" [routerLink]="['../create']">Créer un Pain</a></button>
-      <h1>Liste des Pains</h1>
+   <!--   <h1>Liste des Pains</h1>    -->
       <div *ngFor="let pain of pains">
         <fieldset>
-          <h2>{{ pain.nom }} : </h2>
+          <h2>{{ pain.nom }}</h2>
+          <a class="button-62" [routerLink]="['../' + pain.nom]"><span>-> Détails</span></a>
      <!--    <p><b>Prix :</b> {{ pain.prix }}</p> -->
-          <p>{{ pain.description }}</p>
+     <!--     <p>{{ pain.description }}</p>    -->
           <p></p>
-          <a class="button-62" [routerLink]="['../' + pain.nom]"><span>Détails</span></a>
         </fieldset>
       </div>
   </div>
-</body>
+</div>
+
+
+
+<!--
+<div class="subnavigation-container">
+  <div class="container">
+<nav class="navbar p-a-0">
+  <ul class="nav navbar-nav col-subnav">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="../all">Liste Pain</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="../historique">Historique</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="../commande">Commande</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="../contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+-->
+
+<div class="m-t-3"></div>
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-top p-y-2">
+    <div class="container-fluid">
+
+    </div>
+  </div>
+
+  <div class="footer-middle">
+  <div class="container">
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!--Footer Bottom-->
+          <p class="text-xs-center">&copy; Copyright 2023 - City of Belgium.  All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 

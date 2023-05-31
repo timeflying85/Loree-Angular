@@ -1,8 +1,8 @@
-body {
+.body {
   position: relative;
 }
 
-body::before {
+.body::before {
   content: "";
   margin-top: 0%;
   background-image: url('/assets/images/listPain.jpg');
@@ -30,12 +30,12 @@ h1 {
 }
 
 h2 {
-  color: #1406d8;
+  color: #5f00c4;
 }
 
 b{
   color: #5f00c4;
-  flex: 0 0 calc(50% - 20px); /* Ajustez la largeur des fieldsets selon vos besoins */
+  flex: 0 0 calc(50% - 20px); /* Pour Ajuster la largeur des fieldsets */
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -54,8 +54,7 @@ p {
 fieldset {
   line-height: 1;
   border: none;
-  flex: 0 0 calc(50% - 20px); /* Ajustez la largeur des fieldsets selon vos besoins */
-  margin: 10px;
+  flex: 0 0 calc(50% - 20px);
   padding: 10px;
   box-sizing: border-box;
   display: flex;
@@ -71,23 +70,23 @@ button {
 }
 
 span {
-  color: #bff8eb;
+  color: #f6f8f8;
   text-decoration: none;
   text-transform: none;
 }
 
 .create {
-  color: #bff8eb;
+  color: #fcfdfd;
   text-decoration: none;
   text-transform: none;
 }
 
 
 .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right, #3d6277, #73a6c4);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #d34848;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -117,7 +116,7 @@ span {
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(127, 23, 158);
+  color: rgb(249, 248, 250);
   background: #111;
   cursor: pointer;
   position: relative;
@@ -132,15 +131,15 @@ span {
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
+    #3d6277,
+    #3997ce,
+    #0482ca,
+    #3d6277,
     #00ffd5,
-    #002bff,
+    #0f649c,
     #7a00ff,
-    #ff00c8,
-    #ff0000
+    #033074,
+    #3691f8
   );
   position: absolute;
   top: -2px;
@@ -179,3 +178,81 @@ span {
   top: 0;
   border-radius: 10px;
 }
+
+
+
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: #3d6277;
+  padding: 1em;
+  height: 30px;
+}
+.footer-top{
+  background: #2d4958;
+}
+.footer-middle{
+  background: #3d6277;
+  padding-top: 2em;
+  color: white;
+}
+/**Sub Navigation**/
+.subnavigation-container{
+  background: #3d6277;
+}
+.subnavigation .nav-link{
+  color: white;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  margin-bottom: -6px;
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+/*.col-subnav .active{
+  border-top:5px solid orange;
+ background: white;
+  color: black;
+}*/
+
+.nav-link {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.subnavigation-container ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subnavigation-container li {
+  margin-right: 150px;
+  margin-left: 150px;
+  padding: auto;
+}
+
+.text-xs-center {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+

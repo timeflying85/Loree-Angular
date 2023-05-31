@@ -7,6 +7,8 @@ import { PainAllComponent } from './pain/pain-all/pain-all.component';
 import { PainOneComponent } from './pain/pain-one/pain-one.component';
 import { PainCreateComponent } from './pain/pain-create/pain-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
+import { HistoriqueComponent } from './historique/historique.component';
 
 
 
@@ -16,7 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientComponent,
     PainAllComponent,
     PainOneComponent,
-    PainCreateComponent
+    PainCreateComponent,
+    ContactComponent,
+    HistoriqueComponent
   ],
   imports: [
     CommonModule,

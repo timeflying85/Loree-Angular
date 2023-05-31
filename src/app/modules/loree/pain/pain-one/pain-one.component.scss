@@ -94,7 +94,7 @@ a {
 }
 
 .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right,  #3d6277, #73a6c4);
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
@@ -121,4 +121,77 @@ a {
 
 .button-62:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: #3d6277;
+  padding: 1em;
+  height: 30px;
+}
+.footer-top{
+  background: #2d4958;
+}
+.footer-middle{
+  background: #3d6277;
+  padding-top: 2em;
+  color: white;
+}
+/**Sub Navigation**/
+.subnavigation-container{
+  background: #3d6277;
+}
+.subnavigation .nav-link{
+  color: white;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  /*margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+/*.col-subnav .active{
+  border-top:5px solid orange;
+ background: white;
+  color: black;
+}*/
+
+.nav-link {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.subnavigation-container ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subnavigation-container li {
+  margin-right: 200px;
+}
+
+.text-xs-center {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
