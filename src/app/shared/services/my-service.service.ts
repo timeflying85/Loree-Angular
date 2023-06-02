@@ -9,7 +9,7 @@ import { PainCreateComponent } from 'src/app/modules/loree/pain/pain-create/pain
 })
 export class MyServiceService {
 
-  private baseUrl = 'http://localhost:8080/pain';
+  private baseUrl = `http://localhost:8080/pain`;
   private apiUrl = 'http://localhost:8080/ingredient';
 
 
